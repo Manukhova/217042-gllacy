@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body class="gllacy-body">
      <header class="header">
         <div class="header__wrap">
            <div class="header__logo">
-             <img src="http://placehold.it/150x100" alt=" Gllacy shop">
+             <img src="img/logo.png" width="154" height="64" alt=" Gllacy shop">
            </div>
              <ul class="menu">
                <li class="menu__item menu__item-opened">
@@ -60,14 +60,14 @@
           <div class="basket__table">
             <table>
               <tr>
-                <td><img src="http://placehold.it/150x100" alt="Пломбир"></td>
-                <td>Пломбир</td>
+                <td><div class="basket__cross"></div><img src="img/busket1.png" width="33" height="33" alt="Пломбир c апельсиновым джемом"></td>
+                <td>Пломбир c апельсиновым джемом</td>
                 <td>1,5 кг *200Р</td>
                 <td>300 Р</td>
               </tr>
               <tr>
-                <td><img src="http://placehold.it/150x100" alt="Клубничный пломбир"></td>
-                <td>Клубничный пломбир</td>
+                <td><div class="basket__cross"></div><img src="img/busket2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг *300Р</td>
                 <td>450 Р</td>
               </tr>
@@ -94,18 +94,18 @@
           <div class="slider__inner">
               <div class="slider__slides">
                 <div class="slider__slides1">
-                   <img src="http://placehold.it/150x100" alt="Пломбир">
-                   <h1></h1>
+                   <img src="img/Icecream1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+                   <h1>Крем-брюле и пломбир с малиновым джемом</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
                 </div>
                 <div class="slider-slides2">
-                   <img src="http://placehold.it/150x100" alt="Щербет">
-                   <h1></h1>
+                   <img src="img/Icecream2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+                   <h1>Шоколадный пломбир и лимонный сорбет</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
                 </div>
                 <div class="slider-slides3">
-                   <img src="http://placehold.it/150x100" alt="Фруктовый лед">
-                   <h1></h1>
+                   <img src="img/Icecream3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
+                   <h1>Пломбир с помадкой и клубничный щербет</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
                 </div>
             </div>
@@ -129,28 +129,32 @@
       <section class="catalog">
       <article class="catalog__hit">
         <figure>
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
+          <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <figcaption>310 P/кг</figcaption>
         </figure>
         <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </article>
       <article class="catalog__hit">
         <figure>
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
+          <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <figcaption>380 P/кг</figcaption>
         </figure>
         <a class="catalog-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
       </article>
       <article class="catalog__hit">
         <figure>
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
+          <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <figcaption>355 P/кг</figcaption>
         </figure>
         <a class="catalog-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </article>
       <article class="catalog__hit">
         <figure>
-          <img src="http://placehold.it/150x100" alt="">
+          <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
+          <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <figcaption>415 P/кг</figcaption>
         </figure>
         <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -158,10 +162,10 @@
     </section>
     <section class="about">
       <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-      <p>Все наше мороженое изготаливается с использованием современного оборудования и проверенных временем технологий</p>
-      <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывет долговременное сотрудничество</p>
-      <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
+      <div class="about__icon-1"></div><p>Все наше мороженое изготаливается с использованием современного оборудования и проверенных временем технологий</p>
+      <div class="about__icon-2"></div><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      <div class="about__icon-3"></div><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывет долговременное сотрудничество</p>
+      <div class="about__icon-4"></div><p>Доставка нашего мороженого до заказчиков осуществляется в специальном
       термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
     </section>
     <div class="news">
@@ -183,7 +187,7 @@
       </div>
     </div>
     <div class="location">
-      <img src="http://placehold.it/150x100" alt="Карта">
+      <img src="img/Карта.jpg" width="1200" height="430" alt="Карта">
       <div class="location__contacts">
         <p>Адрес главного офиса и офлайн магазина:</p>
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -206,7 +210,7 @@
     </section>
     <section class="footer__info">
       <ul>
-        <li><a class="footer__link" href="#">Для поставщиков</a></li>
+        <li><a class="footer__link" href="#"><span class="footer__heart"></span>Для поставщиков</a></li>
         <li><a class="footer__link" href="#">О производстве</a></li>
         <li><a class="footer__link" href="#">Наши документы</a></li>
         <li><a class="footer__link" href="#">Экологические стандарты</a></li>
@@ -214,7 +218,7 @@
     </section>
     <section class="footer___copyright">
       <a href="#">
-        <img src="http://placehold.it/150x100" alt="HTML Academy">
+        <img src="img/Лого.png" width="108" height="38" alt="HTML Academy">
       </a>
       Сделано в<a class="footer__link" href="https://htmlacademy.ru">HTML Academy</a>©2016
     </section>

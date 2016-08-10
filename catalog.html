@@ -2,16 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body class="gllacy-body">
     <header  class="main-header">
       <div class="container">
         <nav class="main-menu">
           <div class="header-logo">
             <a href="#">
-            <img src="http://placehold.it/150x100" alt=" Gllacy shop"></a>
+            <img src="img/logo.png" width="154" height="64" alt=" Gllacy shop"></a>
           </div>
             <ul>
               <li>
@@ -56,14 +56,14 @@
           <div class="basket-table">
             <table>
               <tr>
-                <td><img src="http://placehold.it/150x100" alt="Пломбир"></td>
-                <td>Пломбир</td>
+                <td><div class="basket__cross"></div><img src="img/busket1.png" width="33" height="33" alt="Пломбир c апельсиновым джемом"></td>
+                <td>Пломбир c апельсиновым джемом</td>
                 <td>1,5 кг *200Р</td>
                 <td>300 Р</td>
               </tr>
               <tr>
-                <td><img src="http://placehold.it/150x100" alt="Клубничный пломбир"></td>
-                <td>Клубничный пломбир</td>
+                <td><div class="basket__cross"></div><img src="img/busket2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг *300Р</td>
                 <td>450 Р</td>
               </tr>
@@ -89,21 +89,21 @@
         </ul>
       </div>
     </header>
-    <main>
-      <h1>Сливочное мороженое</h1>
+    <main class="main__catalog">
+      <h2>Сливочное мороженое</h2>
       <div class="filter">
         <form action="http://echo.htmlacademy.ru/" method="post">
-          <h2>Сортировка:</h2>
+          <b>Сортировка:</b>
           <select name="sorttype">
             <option value="popularity">по популярности</option>
             <option value="inexpensive">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
             <option value="fat">по жирности</option>
           </select>
-          <h2>Цена: 100 руб. - 500 руб.</h2>
+          <b>Цена: 100 руб. - 500 руб.</b>
           <label for="price"></label>
           <input type="range" id="price" name="price" min="50" max="700" step="50">
-          <h2>Жирность:</h2>
+          <b>Жирность:</b>
           <label>
             <input type="radio" name="fat" value="zero">
             0%
@@ -120,7 +120,7 @@
             <input type="radio" name="fat" value="overthirty">
             выше 30%
           </label>
-          <h2>Наполнители:</h2>
+          <b>Наполнители:</b>
           <label for="choko">шоколадные</label>
           <input type="checkbox" name="topping" id="choko" checked>
           <label for="sugar">сахарные присыпки</label>
@@ -137,7 +137,7 @@
       <div class="main-calatog">
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+              <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <figcaption>310 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -145,7 +145,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <figcaption>380 P/кг</figcaption>
           </figure>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -153,7 +153,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <figcaption>355 P/кг</figcaption>
           </figure>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -161,7 +161,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
            <figcaption>415 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -169,7 +169,7 @@
        </article>
        <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
             <figcaption>325 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с брусничным джемом</a>
@@ -177,7 +177,7 @@
         </article>
        <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             <figcaption>410 P/кг</figcaption>
           </figure>
           <a href="#">Сливочно-черничное с цельными ягодами черники</a>
@@ -185,7 +185,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <figcaption>375 P/кг</figcaption>
           </figure>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
@@ -193,7 +193,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             <figcaption>320 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с шоколадной стружкой</a>
@@ -201,7 +201,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             <figcaption>440 P/кг</figcaption>
           </figure>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
@@ -209,7 +209,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+          <img src="img/10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             <figcaption>435 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с ментоловым сиропом</a>
@@ -217,7 +217,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             <figcaption>355 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с кусочками черного шоколада</a>
@@ -225,7 +225,7 @@
         </article>
         <article class="catalog-item">
           <figure>
-            <img src="http://placehold.it/150x100" alt="">
+            <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
             <figcaption>420 P/кг</figcaption>
           </figure>
           <a href="#">Сливочное с мятным сиропом</a>
@@ -260,7 +260,7 @@
       </section>
       <section class="footer___copyright">
         <a href="#">
-          <img src="http://placehold.it/150x100" alt="HTML Academy">
+          <img src="img/Лого.png" width="108" height="38" alt="HTML Academy">
         </a>
         Сделано в<a class="footer__link" href="https://htmlacademy.ru">HTML Academy</a>©2016
       </section>
