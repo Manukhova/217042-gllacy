@@ -6,13 +6,12 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="gllacy-body">
-    <header  class="main-header">
-      <div class="container">
-        <nav class="main-menu">
-          <div class="header-logo">
-            <a href="#">
-            <img src="img/logo.png" width="154" height="64" alt=" Gllacy shop"></a>
+     <header class="header">
+        <div class="wrapper clearfix">
+          <div class="header__logo">
+            <img src="img/logo.png" width="154" height="64" alt=" Gllacy shop">
           </div>
+          <div class="menu">
             <ul>
               <li>
                 <a href="#">Каталог</a>
@@ -24,8 +23,8 @@
                 <a href="#">О компании</a>
               </li>
             </ul>
-        </nav>
-      </div>
+        </div>
+
       <div class="user-block">
         <div class="search">
           <div class="search-a">
@@ -71,10 +70,14 @@
             <a class="main-link main-link__basket" href="#">Оформить заказ</a>
           </div>
         </div>
+
         <p>С 10 до 22 ежедневно<br>
           8 812 450-25-25
         </p>
+          </div>
       </div>
+      </header>
+    <main class="wrapper">
       <div class="breadcrumbs">
         <ul>
           <li>
@@ -88,8 +91,6 @@
           </li>
         </ul>
       </div>
-    </header>
-    <main class="main__catalog">
       <h2>Сливочное мороженое</h2>
       <div class="filter">
         <form action="http://echo.htmlacademy.ru/" method="post">
@@ -134,7 +135,7 @@
           <input type="submit" value="Применить">
         </form>
       </div>
-      <div class="main-calatog">
+      <div class="main-calatog clearfix">
         <article class="catalog-item">
           <figure>
               <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -244,26 +245,28 @@
       </div>
     </main>
     <footer class="footer">
+      <div class="wrapper clearfix">
       <section class="footer__social">
-        <a class="footer__btn footer__btn-tw" href="#"></a>
-        <a class="footer__btn footer__btn-inst" href="#"></a>
-        <a class="footer__btn footer__btn-fb" href="#"></a>
-        <a class="footer__btn footer__btn-vk" href="#"></a>
+        <a class="footer__btn footer__btn-tw" href="#">tw</a>
+        <a class="footer__btn footer__btn-inst" href="#">inst</a>
+        <a class="footer__btn footer__btn-fb" href="#">fb</a>
+        <a class="footer__btn footer__btn-vk" href="#">vk</a>
       </section>
       <section class="footer__info">
         <ul>
-          <li><a class="footer__link" href="#">Для поставщиков</a></li>
+          <li><a class="footer__link" href="#"><span class="footer__heart"></span>Для поставщиков</a></li>
           <li><a class="footer__link" href="#">О производстве</a></li>
           <li><a class="footer__link" href="#">Наши документы</a></li>
           <li><a class="footer__link" href="#">Экологические стандарты</a></li>
         </ul>
       </section>
-      <section class="footer___copyright">
+      <section class="footer__copyright">
         <a href="#">
           <img src="img/Лого.png" width="108" height="38" alt="HTML Academy">
         </a>
         Сделано в<a class="footer__link" href="https://htmlacademy.ru">HTML Academy</a>©2016
       </section>
+    </div>
     </footer>
   </body>
 </html>

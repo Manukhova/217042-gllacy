@@ -33,7 +33,9 @@ h2 {
 
 .wrapper {
   padding:0 2.3%;
+
   box-sizing: border-box;
+
 }
 
 .header__logo {
@@ -73,18 +75,27 @@ h2 {
   width: 46.6%;
 }
 
-.catalog__hit {
+.catalog__hit,
+.catalog-item {
   float: left;
   width: 22.2%;
-  padding-right: 2.2%;
+  margin-right: 2.2%;
 }
 
 .catalog__hit:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog {
   margin-bottom: 40px;
+}
+
+.paginator {
+
 }
 
 .about {
