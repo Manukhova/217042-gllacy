@@ -1,4 +1,7 @@
 .gllacy-body {
+  margin: 0;
+  padding: 0;
+
 
   font-size: 16px;
   line-height: 22px;
@@ -6,6 +9,7 @@
   font-weight: bold;
   font-family: "Roboto", "Open Sans", sans-serif;
   background-color: #849d8f;
+
 }
 
 h1 {
@@ -31,16 +35,22 @@ h2 {
   clear: both;
 }
 
+figure {
+  margin:0;
+}
+
 .wrapper {
+  max-width:1200px;
+  min-width:900px;
   padding:0 2.3%;
-
+  margin-left:auto;
+  margin-right:auto;
   box-sizing: border-box;
-
 }
 
 .header__logo {
   float: left;
-  width: 11.1%;
+
   min-height: 80px;
   box-sizing: border-box;
 }
@@ -75,27 +85,35 @@ h2 {
   width: 46.6%;
 }
 
-.catalog__hit,
-.catalog-item {
+.catalog__hit {
   float: left;
   width: 22.2%;
   margin-right: 2.2%;
+}
+
+.catalog__item {
+  float: left;
+  width: 22.2%;
+  margin-right: 2.2%;
+
 }
 
 .catalog__hit:last-child {
   margin-right: 0;
 }
 
-.catalog-item:nth-child(4n) {
+.catalog__item:nth-child(4n) {
   margin-right: 0;
 }
+
 
 .catalog {
   margin-bottom: 40px;
 }
 
 .paginator {
-
+float:right;
+width: 15%;
 }
 
 .about {
