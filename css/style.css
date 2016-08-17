@@ -1,15 +1,12 @@
 .gllacy-body {
   margin: 0;
   padding: 0;
-
-
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
   font-family: "Roboto", "Open Sans", sans-serif;
   background-color: #849d8f;
-
 }
 
 h1 {
@@ -28,17 +25,6 @@ h2 {
   font-family: "Roboto", "Open Sans", sans-serif;
 }
 
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-figure {
-  margin:0;
-}
-
 .wrapper {
   max-width:1200px;
   min-width:900px;
@@ -48,111 +34,62 @@ figure {
   box-sizing: border-box;
 }
 
-.header__logo {
-  float: left;
-
-  min-height: 80px;
-  box-sizing: border-box;
+.wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu {
-  float: left;
-  width: 35.5%;
-  margin-left: 10px;
-  box-sizing: border-box;
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.user-block {
-  float: right;
-  width: 22.2%;
-  min-height: 70px;
-  box-sizing: border-box;
+figure {
+    margin-left: 0;
+}
+
+.stock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock__left,
+.stock__right {
+  width: 46.7%;
 }
 
 .slider__slides {
   width: 60%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.stock__left {
-  float: left;
-  width: 46.6%;
-}
-
-.stock__right {
-  float: right;;
-  width: 46.6%;
-}
-
-.catalog__hit {
-  float: left;
-  width: 22.2%;
-  margin-right: 2.2%;
-}
-
-.catalog__item {
-  float: left;
-  width: 22.2%;
-  margin-right: 2.2%;
-
-}
-
-.catalog__hit:last-child {
-  margin-right: 0;
-}
-
-.catalog__item:nth-child(4n) {
-  margin-right: 0;
-}
-
-
-.catalog {
-  margin-bottom: 40px;
-}
-
-.paginator {
-float:right;
-width: 15%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .about {
-    margin-bottom: 46px;
-}
-
-.blog {
-  float: left;
-  width: 46.6%;
-}
-
-.mail {
-  float: right;;
-  width: 46.6%;
+  margin-bottom: 46px;
 }
 
 .news {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 25px;
-
+.blog,
+.mail {
+  flex-basis: 46.7%;
 }
 
 .footer__social {
-  float: left;
   width: 22.2%;
   padding-right: 2.2%;
-
 }
+
 .footer__info {
-  float: left;
   width: 46.6%;
   padding-right: 2.2%;
 }
 
 .footer__copyright {
-  float: right;
   width: 22.2%;
 }
