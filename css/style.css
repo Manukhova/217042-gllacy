@@ -55,7 +55,9 @@ figure {
 }
 
 .stock__left,
-.stock__right {
+.stock__right,
+.blog,
+.mail  {
   width: 46.7%;
 }
 
@@ -75,19 +77,35 @@ figure {
   margin-bottom: 40px;
 }
 
-.blog,
-.mail {
-  flex-basis: 46.7%;
+.main-calatog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  width: 22.2%;
+  margin-right: 2.2%;
+}
+
+.catalog__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.paginator {
+  display: flex;
+  width: 15%;
+  margin-left: auto;
 }
 
 .footer__social {
   width: 22.2%;
-  padding-right: 2.2%;
+  margin-right: 2.2%;
 }
 
 .footer__info {
   width: 46.6%;
-  padding-right: 2.2%;
+  margin-right: 2.2%;
 }
 
 .footer__copyright {
