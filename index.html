@@ -7,11 +7,12 @@
   </head>
   <body class="gllacy-body">
      <header class="header">
-        <div class="header__wrap">
-           <div class="header__logo">
-             <img src="img/logo.png" width="154" height="64" alt=" Gllacy shop">
-           </div>
-             <ul class="menu">
+        <div class="wrapper wrap">
+          <div class="header__logo">
+            <img src="img/logo.svg" width="154" height="64" alt=" Gllacy shop">
+          </div>
+          <div class="menu">
+             <ul>
                <li class="menu__item menu__item-opened">
                  <a href="#">Каталог</a>
                   <ul class="menu__sub">
@@ -79,8 +80,9 @@
           8 812 450-25-25
         </p>
       </div>
+      </div>
   </header>
-  <main>
+  <main class="wrapper">
     <div class="main-slider">
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -126,13 +128,13 @@
           <a class="main-link main-link__stock" href="#">Хочу шоколадки!</a>
         </div>
       </div>
-      <section class="catalog">
-      <article class="catalog__hit">
-        <figure>
-          <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
-          <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <figcaption>310 P/кг</figcaption>
-        </figure>
+      <div class="catalog">
+        <article class="catalog__hit">
+          <figure>
+            <img src="img/hit.jpg" width="61" height="61" alt="ХИТ">
+            <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+           <figcaption>310 P/кг</figcaption>
+          </figure>
         <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </article>
       <article class="catalog__hit">
@@ -159,15 +161,15 @@
         </figure>
         <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
       </article>
-    </section>
-    <section class="about">
+    </div>
+    <div class="about">
       <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
       <div class="about__icon-1"></div><p>Все наше мороженое изготаливается с использованием современного оборудования и проверенных временем технологий</p>
       <div class="about__icon-2"></div><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
       <div class="about__icon-3"></div><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывет долговременное сотрудничество</p>
       <div class="about__icon-4"></div><p>Доставка нашего мороженого до заказчиков осуществляется в специальном
       термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-    </section>
+    </div>
     <div class="news">
       <div class="blog">
         <h3>Новое в нашем блоге</h3>
@@ -178,7 +180,7 @@
       </div>
       <div class="mail">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-        самого вкусного, что у нас происходитю Обещаем не спамить и не слать
+        самого вкусного, что у нас происходит. Обещаем не спамить и не слать
         всякой не нужной ерунды. Честно =)</p>
         <form action="http://echo.htmlacademy.ru/" method="post">
           <input type="email" name="email" placeholder="Электронная почта">
@@ -188,7 +190,7 @@
     </div>
     <div class="location">
       <img src="img/Карта.jpg" width="1200" height="430" alt="Карта">
-      <div class="location__contacts">
+  <!---    <div class="location__contacts">
         <p>Адрес главного офиса и офлайн магазина:</p>
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <p>Для заказов по телефону:</p>
@@ -198,15 +200,16 @@
       <form action="http://echo.htmlacademy.ru/" method="post">
         <input class="main-link main-link__feedback" type="button" value="Форма обратной связи">
       </form>
-      </div>
+    </div>--->
     </div>
   </main>
   <footer class="footer">
+    <div class="wrapper wrap">
     <section class="footer__social">
-      <a class="footer__btn footer__btn-tw" href="#"></a>
-      <a class="footer__btn footer__btn-inst" href="#"></a>
-      <a class="footer__btn footer__btn-fb" href="#"></a>
-      <a class="footer__btn footer__btn-vk" href="#"></a>
+      <a class="footer__btn footer__btn-tw" href="#">tw</a>
+      <a class="footer__btn footer__btn-inst" href="#">inst</a>
+      <a class="footer__btn footer__btn-fb" href="#">fb</a>
+      <a class="footer__btn footer__btn-vk" href="#">vk</a>
     </section>
     <section class="footer__info">
       <ul>
@@ -216,14 +219,15 @@
         <li><a class="footer__link" href="#">Экологические стандарты</a></li>
       </ul>
     </section>
-    <section class="footer___copyright">
+    <section class="footer__copyright">
       <a href="#">
         <img src="img/Лого.png" width="108" height="38" alt="HTML Academy">
       </a>
       Сделано в<a class="footer__link" href="https://htmlacademy.ru">HTML Academy</a>©2016
     </section>
+  </div>
   </footer>
-    <div class="modal"><!---MODAL----------------------->
+    <!---<div class="modal">
       <form action="http://echo.htmlacademy.ru/" method="post">
         <h4>Мы обязательно Вам ответим!</h4>
         <input type="text" name="username" placeholder="Как Вас зовут?">
@@ -231,6 +235,6 @@
         <textarea name="user-feedback" rows="5" cols="40"></textarea>
         <input class="main-link main-link__modal" type="submit" value="Отправить">
       </form>
-    </div>
+    </div>----------------------->
   </body>
 </html>
