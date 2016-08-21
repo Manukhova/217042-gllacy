@@ -2,24 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="gllacy-body">
-     <header class="header">
+
         <div class="wrapper wrap">
+          <header class="header">
           <div class="header__logo">
             <img src="img/logo.svg" width="154" height="64" alt=" Gllacy shop">
           </div>
           <div class="menu">
             <ul>
-              <li>
+              <li class="menu__item">
                 <a href="#">Каталог</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#">О компании</a>
               </li>
             </ul>
@@ -27,18 +30,18 @@
 
       <div class="user-block">
         <div class="search">
-          <div class="search-a">
-            <a class="search-btn" href="#"></a>
+          <div class="search__link">
+            <a class="search__btn" href="#"></a>
           </div>
-          <div class="search-form">
+          <div class="search__form">
             <input type="search" name="search" placeholder="Что ищем?">
           </div>
         </div>
         <div class="enter">
-          <div class="enter-a">
-            <a class="login" href="#">Вход</a>
+          <div class="enter__link">
+            <a class="enter__btn" href="#">Вход</a>
           </div>
-          <div class="enter-form">
+          <div class="enter__form">
             <form action="http://echo.htmlacademy.ru/" method="post">
               <input type="email" name="email" placeholder="Электронная почта">
               <input type="password" name="password" id="password-field" placeholder="Пароль">
@@ -49,10 +52,10 @@
           </div>
         </div>
         <div class="basket">
-          <div class="basket-a">
-            <a class="login" href="#">Пусто</a>
+          <div class="basket__link">
+            <a class="basket__btn" href="#">Пусто</a>
           </div>
-          <div class="basket-table">
+          <div class="basket__table">
             <table>
               <tr>
                 <td><div class="basket__cross"></div><img src="img/busket1.png" width="33" height="33" alt="Пломбир c апельсиновым джемом"></td>
@@ -139,97 +142,97 @@
         <article class="catalog__item">
           <figure>
               <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <figcaption>310 P/кг</figcaption>
+            <figcaption><span>310 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="catalog__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <figcaption>380 P/кг</figcaption>
+            <figcaption><span>380 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="catalog__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
          <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <figcaption>355 P/кг</figcaption>
+            <figcaption><span>355 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="catalog__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-           <figcaption>415 P/кг</figcaption>
+           <figcaption><span>415 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="catalog__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
        </article>
        <article class="catalog__item">
           <figure>
             <img src="img/5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
-            <figcaption>325 P/кг</figcaption>
+            <figcaption><span>325 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с брусничным джемом</a>
+          <a class="catalog__link" href="#">Сливочное с брусничным джемом</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
        <article class="catalog__item">
           <figure>
             <img src="img/6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-            <figcaption>410 P/кг</figcaption>
+            <figcaption><span>410 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="catalog__link" href="#">Сливочно-черничное с цельными ягодами черники</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-            <figcaption>375 P/кг</figcaption>
+            <figcaption><span>375 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="catalog__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <figcaption>320 P/кг</figcaption>
+            <figcaption><span>320 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с шоколадной стружкой</a>
+          <a class="catalog__link" href="#">Сливочное с шоколадной стружкой</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-            <figcaption>440 P/кг</figcaption>
+            <figcaption><span>440 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="catalog__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
           <img src="img/10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-            <figcaption>435 P/кг</figcaption>
+            <figcaption><span>435 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с ментоловым сиропом</a>
+          <a class="catalog__link" href="#">Сливочное с ментоловым сиропом</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-            <figcaption>355 P/кг</figcaption>
+            <figcaption><span>355 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="catalog__link" href="#">Сливочное с кусочками черного шоколада</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog__item">
           <figure>
             <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <figcaption>420 P/кг</figcaption>
+            <figcaption><span>420 ₽</span>/кг</figcaption>
           </figure>
-          <a href="#">Сливочное с мятным сиропом</a>
+          <a class="catalog__link" href="#">Сливочное с мятным сиропом</a>
           <a class="main-link main-link__catalog" href="#">Быстрый просмотр</a>
         </article>
     </div>
@@ -248,10 +251,10 @@
     <footer class="footer">
       <div class="wrapper wrap">
       <section class="footer__social">
-        <a class="footer__btn footer__btn-tw" href="#">tw</a>
-        <a class="footer__btn footer__btn-inst" href="#">inst</a>
-        <a class="footer__btn footer__btn-fb" href="#">fb</a>
-        <a class="footer__btn footer__btn-vk" href="#">vk</a>
+        <a class="footer__btn footer__btn-tw" href="#"><img src="img/Твитер.svg" width="31" height="31"></a>
+        <a class="footer__btn footer__btn-inst" href="#"><img src="img/Инста.svg" width="31" height="31"></a>
+        <a class="footer__btn footer__btn-fb" href="#"><img src="img/ФБ.svg" width="31" height="31"></a>
+        <a class="footer__btn footer__btn-vk" href="#"><img src="img/ВК.svg" width="31" height="31"></a>
       </section>
       <section class="footer__info">
         <ul>
@@ -265,7 +268,7 @@
         <a href="#">
           <img src="img/Лого.png" width="108" height="38" alt="HTML Academy">
         </a>
-        Сделано в<a class="footer__link" href="https://htmlacademy.ru">HTML Academy</a>©2016
+        <p class="nowrap">Сделано в <a class="footer__link" href="https://htmlacademy.ru">HTMLAcademy</a> © 2016</p>
       </section>
     </div>
     </footer>

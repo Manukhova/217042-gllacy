@@ -47,6 +47,12 @@ h3 {
   justify-content: space-between;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 .menu {
   width: 35.6%;
 }
@@ -86,6 +92,7 @@ h3 {
 }
 
 .user-block {
+  margin-left: auto;
   display: flex;
   width: 22.2%;
   justify-content: space-between;;
@@ -116,8 +123,10 @@ h3 {
   padding: 12px 17px;
   color: #ffffff;
   background-color: #ee6240;
-  border-radius: 20px;
-  box-shadow: 0 1px  2px 1px #9e4334;
+  border-radius: 40px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .main-link:hover {
@@ -147,6 +156,22 @@ h3 {
 
 figure {
     margin-left: 0;
+    position: relative;
+}
+
+figcaption {
+  position: absolute;
+  font-weight: 500;
+  line-height: 45px;
+  font-size: 30px;
+  top: 210px;
+  text-shadow: 1px 1px 2px #acb5b1;
+}
+
+figcaption span {
+  line-height: 45px;
+  font-size: 45px;
+  font-weight: 500;
 }
 
 .stock {
@@ -154,6 +179,13 @@ figure {
   justify-content: space-between;
   margin-bottom: 40px;
   padding-left: 23px;
+  font-size: 18px;
+  line-height: 22px;
+
+}
+
+.stock h2 {
+  margin: 20px 0 0 0;
 }
 
 .stock__left {
@@ -170,6 +202,11 @@ figure {
   background-image: url(../img/Шоколадныйфон.jpg);
   border-radius: 5%;
   padding-left: 25px;
+}
+
+.main-link__stock {
+
+  white-space: nowrap;
 }
 
 .slider__slides {
@@ -191,6 +228,7 @@ figure {
 
 .catalog__link {
   color: #ffffff;
+  font-weight: 500;
 }
 
 .about {
@@ -209,6 +247,7 @@ figure {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  font-weight: 400;
 }
 
 .about__icon-1 {
@@ -290,6 +329,39 @@ figure {
 
 .catalog__item:nth-child(4n) {
   margin-right: 0;
+}
+
+.location {
+  position: relative;
+}
+
+.location__contacts {
+  background-color: #fefefe;
+  color: #000000;
+  width: 25.5%;
+  border-radius: 10px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  font-weight: 400;
+
+  box-sizing: border-box;
+}
+
+.location__contacts b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.main-link__feedback {
+  width: 80%;
+}
+
+.pin {
+  position: absolute;
+  top: 33%;
+  left: 23.3%;
 }
 
 .paginator {
