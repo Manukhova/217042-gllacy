@@ -10,8 +10,7 @@
   <body class="gllacy-body">
     <div class="wrapper wrap">
      <header class="header">
-
-          <div class="header__logo">
+        <div class="header__logo">
             <img src="img/logo.svg" width="154" height="64" alt=" Gllacy shop">
           </div>
           <div class="menu">
@@ -19,11 +18,12 @@
                <li class="menu__item menu__item-opened">
                  <a href="#">Каталог</a>
                   <ul class="menu__sub">
-                    <li class="menu__item menu__item-sub"><a href="#">Новинки</a></li>
-                    <li class="menu__item menu__item-sub"><a href="#">Сливочное</a></li>
-                    <li class="menu__item menu__item-sub"><a href="#">Щербеты</a></li>
-                    <li class="menu__item menu__item-sub"><a href="#">Фруктовый лед</a></li>
-                    <li class="menu__item menu__item-sub"><a href="#">Мелорин</a></li>
+                    <li class="menu__item-sub"><a href="#">Новинки</a></li>
+                    <hr>
+                    <li class="menu__item-sub"><a href="#">Сливочное</a></li>
+                    <li class="menu__item-sub"><a href="#">Щербеты</a></li>
+                    <li class="menu__item-sub"><a href="#">Фруктовый лед</a></li>
+                    <li class="menu__item-sub"><a href="#">Мелорин</a></li>
                   </ul>
                </li>
                <li class="menu__item">
@@ -79,37 +79,43 @@
             <a class="main-link main-link__basket" href="#">Оформить заказ</a>
           </div>
          </div>
-        <!---<p>С 10 до 22 ежедневно<br>
-          8 812 450-25-25
-        </p>--->
-      </div>
+         </div>
       </div>
   </header>
-  <main class="wrapper">
-      <div class="slider">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-           <div class="slider__controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-          </div>
-          <div class="slider__inner">
-              <div class="slider__slides">
-                   <img src="img/Icecream1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+    <main class="wrapper">
+  <div class="menu__contacts">
+ <p>С 10 до 22 ежедневно<br>
+   8 812 450-25-25
+ </p>
+</div>
+      <div class="slider__holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+                <div class="image__holder">
+                  <div class="image__1">
+                   <img src="img/Icecream1.png" class="slider__image" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
                    <h1>Крем-брюле и пломбир с малиновым джемом</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
-                   <img src="img/Icecream2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+                 </div>
+                 <div class="image__2">
+                   <img src="img/Icecream2.png" class="slider__image" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
                    <h1>Шоколадный пломбир и лимонный сорбет</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
-                   <img src="img/Icecream3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
+                 </div>
+                 <div class="image__3">
+                   <img src="img/Icecream3.png" class="slider__image" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
                    <h1>Пломбир с помадкой и клубничный щербет</h1>
                    <a class="main-link main-link__header" href="#">Давайте оба!</a>
+                 </div>
+            </div>
+            <div class="button__holder">
+               <a href="#slider-image-1" class="slider-change"></a>
+               <a href="#slider-image-2" class="slider-change"></a>
+               <a href="#slider-image-3" class="slider-change"></a>
             </div>
           </div>
-      </div>
-    </div>
+
     <div class="stock">
        <div class="stock__left">
           <h2>Малинка даром!</h2>
@@ -165,20 +171,19 @@
        <div class="about__text">
         <p>Все наше мороженое изготаливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
       </div>
-    </div>
-    <div class="about__item">
+
       <div class="about__icon-2"></div>
       <div class="about__text">
         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
       </div>
     </div>
+
     <div class="about__item">
       <div class="about__icon-3"></div>
       <div class="about__text">
       <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывет долговременное сотрудничество</p>
     </div>
-  </div>
-    <div class="about__item">
+
       <div class="about__icon-4"></div>
       <div class="about__text">
       <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
@@ -195,6 +200,7 @@
         к столу</a></h3>
       </div>
       <div class="mail">
+        <div class="mail__center">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
         самого вкусного, что у нас происходит. Обещаем не спамить и не слать
         всякой не нужной ерунды. Честно =)</p>
@@ -203,17 +209,18 @@
           <input class="main-link main-link__mail" type="submit" value="Отправить">
         </form>
       </div>
+      </div>
     </div>
     <div class="location">
       <img src="img/Карта.jpg" width="1200" height="430" alt="Карта">
       <div class="pin"><img src="img/Пин.svg"></div>
     <div class="location__contacts">
-        <p>Адрес главного офиса и офлайн магазина:</p>
+        <p>Адрес главного офиса и офлайн магазина:
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-        <p>Для заказов по телефону:</p>
+        </p>
+        <p>Для заказов по телефону:
         <b>8 812 450-25-25</b>
-        <p>(с 10 до 22 ежедевно)</p>
-
+        (с 10 до 22 ежедевно)</p>
       <form action="http://echo.htmlacademy.ru/" method="post">
         <input class="main-link main-link__feedback" type="button" value="Форма обратной связи">
       </form>
