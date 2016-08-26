@@ -8,7 +8,6 @@
     <title>Каталог Глейси</title>
   </head>
   <body class="gllacy-body">
-
         <div class="wrapper wrap">
           <header class="header">
           <div class="header__logo">
@@ -45,9 +44,13 @@
               <form action="http://echo.htmlacademy.ru/" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
                 <input type="password" name="password" id="password-field" placeholder="Пароль">
+                <div>
+                  <div class="enter__forget">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
-                <button class="btn btn__enter" type="submit">Войти</button>
+              </div>
+               <button class="btn btn__enter" type="submit">Войти</button>
+                </div>
               </form>
             </div>
             </div>
@@ -55,7 +58,6 @@
           <div class="basket">
             <div class="basket__link">
               <a class="basket__area" href="#">Пусто</a>
-           </div>
            <div class="basket__table">
              <table>
                <tr>
@@ -75,9 +77,10 @@
                  <td>450 руб.</td>
                </tr>
              </table>
-             <b>Итого: 750 руб.</>
-             <a class="btn btn__basket" href="#">Оформить заказ</a>
+             <div class="btn__total"><b>Итого: 750 руб.</b>
+             <a class="btn btn__basket" href="#">Оформить заказ</a></div>
            </div>
+          </div>
           </div>
           </div>
        </div>
@@ -99,8 +102,10 @@
       </div>
       <div class="filter">
         <form action="http://echo.htmlacademy.ru/" method="post">
+        <div class="filter__form">
           <div class="filter__sort">
           <b>Сортировка:</b>
+            <div class="sort__back">
           <select name="sorttype">
             <option value="popularity">по популярности</option>
             <option value="inexpensive">сначала недорогие</option>
@@ -108,44 +113,44 @@
             <option value="fat">по жирности</option>
           </select>
         </div>
+        </div>
         <div class="filter__price">
           <b>Цена: 100 руб. - 500 руб.</b>
-          <label for="price"></label>
-          <input type="range" id="price" name="price" min="50" max="700" step="50">
+          <div class="price__back">
+          <div class="price__line"></div>
         </div>
-        <div class="filter__fat">
+        </div>
+         <div class="filter__fat">
           <b>Жирность:</b>
-          <label>
-            <input type="radio" name="fat" value="zero">
-            0%
-          </label>
-          <label>
-            <input type="radio" name="fat" value="ten">
-            до 10%
-          </label>
-          <label>
-            <input type="radio" name="fat" value="thirty">
-            до 30%
-          </label>
-          <label>
-            <input type="radio" name="fat" value="overthirty">
-            выше 30%
-          </label>
+          <div class="fat__back">
+            <input type="radio" id="zero" name="fat" value="zero">
+            <label for="zero">0%</label>
+            <input type="radio" id="ten" name="fat" value="ten" checked>
+            <label for="ten">до 10%</label>
+            <input type="radio" id="thirty" name="fat" value="thirty">
+            <label for="thirty">до 30%</label>
+            <input type="radio" id="overthirty" name="fat" value="overthirty">
+            <label for="overthirty">выше 30%</label>
+          </div>
         </div>
         <div class="filter__top">
           <b>Наполнители:</b>
-          <label for="choko">шоколадные</label>
-          <input type="checkbox" name="topping" id="choko" checked>
-          <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" name="topping" id="sugar" checked>
-          <label for="fruit">фрукты</label>
-          <input type="checkbox" name="topping" id="fruit">
-          <label for="syrup">сиропы</label>
-          <input type="checkbox" name="topping" id="syrup">
-          <label for="jam">джемы</label>
-          <input type="checkbox" name="topping" id="jam">
-          <button type="submit">Применить</button>
+          <div class="top__back">
+            <input type="checkbox" name="topping" id="choko" checked>
+            <label for="choko">шоколадные</label>
+            <input type="checkbox" name="topping" id="sugar" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="topping" id="fruit">
+           <label for="fruit">фрукты</label>
+           <input type="checkbox" name="topping" id="syrup">
+           <label for="syrup">сиропы</label>
+           <input type="checkbox" name="topping" id="jam">
+           <label for="jam">джемы</label>
+          </div>
         </div>
+<a class="form__btn" href="#">Применить</a>
+      </div>
+
         </form>
       </div>
       <div class="main-calatog">
@@ -286,8 +291,8 @@
       <section class="footer__social">
         <a class="footer__btn footer__btn-tw" href="#"></a>
         <a class="footer__btn footer__btn-inst" href="#"></a>
-        <a class="footer__btn footer__btn-fb" href="#"></a>
-        <a class="footer__btn footer__btn-vk" href="#"></a>
+        <a class="footer__btn footer__btn-fb" href="#"><img src="img/ФБ.svg" width="31" height="31"></a>
+        <a class="footer__btn footer__btn-vk" href="#"><img src="img/ВК.svg" width="31" height="31"></a>
       </section>
       <section class="footer__info">
         <ul>
