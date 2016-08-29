@@ -538,27 +538,11 @@ table td:last-child {
   border-radius: 40px;
 }
 
-.basket__area-close {
-  display: none;
-}
-
-.basket__goods {
-  position: relative;
-  display: none;
-  vertical-align: top;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  text-decoration: none;
+.basket__area-goods {
   color: #000000;
   padding: 8px 15px;
   padding-left: 45px;
   background-color: rgba(255,255,255,1);
-  border-radius: 40px;
-}
-
-.basket__goods-show {
-    display: inline-block;
 }
 
 .basket__area:hover,
@@ -577,7 +561,7 @@ table td:last-child {
   background: transparent url("../img/Корзина.svg") no-repeat;
 }
 
-.basket__goods::before {
+.basket__area-goods::before {
   content: "";
   position: absolute;
   left: 17px;
@@ -650,13 +634,36 @@ table td:last-child {
 }
 
 .sort__back select {
+  -moz-appearance: none;
+  -webkit-appearance:none;
   outline: none;
+  border: none;
   background: none;
   color: #ffffff;
+  padding: 8px 35px 8px 15px;
+  border-radius: 40px;
+}
+
+.sort__back select::-ms-expand {
+    display: none;
+}
+
+.sort__back::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 8px;
+  height: 5px;
+  background: transparent url(../img/Маркер.svg) no-repeat;
+}
+
+.sort__back:hover::after {
+  background: transparent url(../img/Маркерчерный.svg) no-repeat;
 }
 
 .sort__back {
-  padding: 8px 15px;
+  position: relative;
   border-radius: 40px;
   background-color: rgba(255,255,255,0.2);
   font-size: 16px;
@@ -667,7 +674,8 @@ table td:last-child {
 }
 
 .sort__back:active,
-.sort__back:hover {
+.sort__back:hover,
+.sort__back:hover select {
   color: #000000;
   background-color: rgba(255,255,255,1);
 }
