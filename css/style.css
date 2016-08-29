@@ -142,12 +142,19 @@ h3 {
   padding: 9px 15px;
 }
 
-.menu__item a:hover {
+.menu__item a:hover,
+.menu__item:hover > a {
   background-color: #f7f6f3;
   color: #000000;
   text-decoration: none;
   padding: 9px 15px;
   border-radius: 40px;
+}
+
+.menu__item > a:active {
+  background-color: #eaeaea;
+  color: #000000;
+  box-shadow: 0px 2px 1px 0px rgba(105, 105, 105, 1) inset;
 }
 
 .menu .menu__sub {
@@ -197,6 +204,18 @@ h3 {
   position: relative;
 }
 
+.menu__item-sub:active {
+  background-color: #f6b5a5;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.menu__item-sub:active a {
+  background-color: #f6b5a5;
+  border-radius: 0;
+  padding: 0;
+}
+
 /*.menu__item-sub:first-child a::after {
   content: "";
   position: absolute;
@@ -225,7 +244,7 @@ h3 {
   display: block;
 }
 
-.basket__link:hover .basket__table {
+.basket__link-show:hover .basket__table {
   display: block;
 }
 
@@ -257,11 +276,13 @@ h3 {
   background: transparent url("../img/Лупа.svg") no-repeat;
 }
 
-.search__area:hover {
+.search__area:hover,
+.search__link:hover > a {
   background-color: rgba(255,255,255,1);
 }
 
-.search__area:hover::before {
+.search__area:hover::before,
+.search__link:hover > a::before {
   content: "";
   position: absolute;
   left: 7px;
@@ -312,7 +333,8 @@ h3 {
   border-radius: 40px;
 }
 
-.enter__area:hover {
+.enter__area:hover,
+.enter__link:hover > a {
   background-color: rgba(255,255,255,1);
   color: #000000;
 }
@@ -327,7 +349,8 @@ h3 {
   background: transparent url("../img/Вход.svg") no-repeat;
 }
 
-.enter__area:hover::before {
+.enter__area:hover::before,
+.enter__link:hover > a::before {
   content: "";
   position: absolute;
   left: 17px;
@@ -343,7 +366,7 @@ h3 {
 
 .enter__link,
 .search__link,
-.basket__link {
+.basket__link-show {
   padding-bottom: 5px;
 }
 
@@ -515,7 +538,31 @@ table td:last-child {
   border-radius: 40px;
 }
 
-.basket__area:hover {
+.basket__area-close {
+  display: none;
+}
+
+.basket__goods {
+  position: relative;
+  display: none;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 15px;
+  padding-left: 45px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 40px;
+}
+
+.basket__goods-show {
+    display: inline-block;
+}
+
+.basket__area:hover,
+.basket__link:hover > a {
   background-color: rgba(255,255,255,1);
   color: #000000;
 }
@@ -530,7 +577,18 @@ table td:last-child {
   background: transparent url("../img/Корзина.svg") no-repeat;
 }
 
-.basket__area:hover::before {
+.basket__goods::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  background: transparent url("../img/Корзинатовар.svg") no-repeat;
+}
+
+.basket__area:hover::before/*,
+.basket__link-show:hover > a::before*/ {
   content: "";
   position: absolute;
   left: 17px;
@@ -577,9 +635,11 @@ table td:last-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.filter b {
+.filter b,
+.sort__label  {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -589,10 +649,15 @@ table td:last-child {
   padding-left: 17px;
 }
 
-.filter__sort select {
+.sort__back select {
+  outline: none;
+  background: none;
+  color: #ffffff;
+}
+
+.sort__back {
   padding: 8px 15px;
   border-radius: 40px;
-  color: #ffffff;
   background-color: rgba(255,255,255,0.2);
   font-size: 16px;
   line-height: 18px;
@@ -601,12 +666,13 @@ table td:last-child {
   margin-bottom: 15px;
 }
 
-.filter__sort select:active {
+.sort__back:active,
+.sort__back:hover {
   color: #000000;
   background-color: rgba(255,255,255,1);
 }
 
-.filter__sort option {
+.sort__back option {
   outline: none;
   color: #000000;
   font-weight: 400;
@@ -638,6 +704,7 @@ table td:last-child {
   height: 20px;
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .price__back::before {
@@ -649,6 +716,7 @@ table td:last-child {
   height: 20px;
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .filter__price {
@@ -743,8 +811,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .form__btn {
-
-  padding: 0px 25px;
+  padding: 8px 28px;
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: rgba(255,255,255,0.2);
@@ -752,6 +819,23 @@ input[type="checkbox"]:checked + label::after {
   text-decoration: none;
   font-weight: 500;
   line-height: 18px;
+}
+
+.form__btn:hover {
+  background-color: rgba(255,255,255,1);
+  color: #000000;
+}
+
+.form__btn:active {
+  background-color: #eaeaea;
+  color: #000000;
+  border: 0;
+  padding: 10px 30px;
+  box-shadow: 0px 2px 1px 0px rgba(105, 105, 105, 1) inset;
+}
+
+.filter__btn {
+  margin-top: 30px;
 }
 
 .main-calatog {
@@ -770,6 +854,10 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog__item:hover {
   z-index: 30;
+}
+
+.catalog__item:hover a {
+  text-decoration: none;
 }
 
 .catalog__item figure {
@@ -811,10 +899,20 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .menu__contacts {
-  width: 22.2%;
+  width: 15%;
+  float: right;
+  text-align: right;
 }
 .menu__contacts p {
   margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.menu__contacts b {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .slide {
@@ -1294,7 +1392,6 @@ figcaption span {
   color: #ffbc9e;
 }
 
-
 .footer__social {
   width: 20%;
   margin-right: 2.2%;
@@ -1421,6 +1518,10 @@ figcaption span {
   padding: 12px 22px;
 }
 
+.modal-content-show {
+  display: block;
+}
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -1430,4 +1531,8 @@ figcaption span {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay-show {
+  display: block;
 }
