@@ -1329,17 +1329,17 @@ figcaption span {
   font-weight: 500;
 }
 
-.paginator a:active,
-.paginator span:active {
-  color: #000000;
-  background-color: rgba(255,255,255,1);
-  border-radius: 50%;
-}
-
 .paginator a:hover,
 .paginator span:hover {
   color: #ffffff;
   background-color: rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+
+.paginator a:active,
+.paginator span:active {
+  color: #000000;
+  background-color: rgba(255,255,255,1);
   border-radius: 50%;
 }
 
@@ -1467,10 +1467,20 @@ figcaption span {
   word-spacing: 3px;
 }
 
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal__content {
-  position: absolute;
-  top: 338px;
-  left: 33%;
   width: 480px;
   padding: 20px 25px;
   border-radius: 15px;
@@ -1528,6 +1538,7 @@ figcaption span {
 .modal__sliding {
   position: relative;
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .login-form input[type="text"],
@@ -1535,7 +1546,6 @@ figcaption span {
 .login-form textarea {
   width: 238px;
   margin: 0;
-  margin-bottom: 25px;
   padding: 15px;
   border: 1px solid #a0a0a0;
   border-radius: 5px;
@@ -1555,6 +1565,7 @@ figcaption span {
   font-weight: 400;
   font-family: "Roboto", "Open Sans", sans-serif;
   color: #a0a0a0;
+  cursor:text;
 }
 
 .label-data {
@@ -1564,26 +1575,31 @@ figcaption span {
   font-weight: 400;
   font-family: "Roboto", "Open Sans", sans-serif;
   color: #a0a0a0;
+  cursor:text;
 }
 
 .login-form textarea:hover {
   border: 2px solid #c7c6c5;
-  width: 431px;
+  width: 433px;
+  margin:-1px 0;
 }
 
 .login-form input:hover {
   border: 2px solid #c7c6c5;
   width: 236px;
+  margin:-1px 0;
 }
 
 .login-form input:focus {
   border: 2px solid #8fbdec;
   width: 236px;
+  margin:-1px 0;
 }
 
 .login-form textarea:focus {
   border: 2px solid #8fbdec;
-  width: 431px;
+  width: 433px;
+  margin:-1px 0;
 }
 
 .modal__sliding input:focus + label,
@@ -1610,7 +1626,7 @@ figcaption span {
 
 .modal__overlay {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;

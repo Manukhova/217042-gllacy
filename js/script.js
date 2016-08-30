@@ -14,6 +14,7 @@
         event.preventDefault();
         popup.classList.add("modal__content-show");
         overlay.classList.add("modal__overlay-show");
+        window.scrollTo(0, 300);
       });
 
  close.addEventListener("click", function(event) {
