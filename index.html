@@ -221,9 +221,8 @@
     </div>
       </main>
     <div class="location">
-       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=b-RudZ-RfKILhTG9dgh8gwBuqwZiXDyF&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-      <div class="pin"><img src="img/Пин.svg"></div>
-    <div class="location__contacts">
+      <script id="map" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=EIMIXkt8dXkvgzJuMV020a631Dl7hu4Y&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+      <div class="location__contacts">
         <p>Адрес главного офиса<br> и офлайн магазина:
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         </p>
@@ -231,7 +230,7 @@
         <b>8 812 450-25-25</b>
         (с 10 до 22 ежедевно)</p>
         <form action="http://echo.htmlacademy.ru/" method="post">
-        <button class="btn btn__feedback" type="button">Форма обратной связи</button>
+        <a class="btn btn__feedback" href="#">Форма обратной связи</a>
       </form>
     </div>
     </div>
@@ -245,7 +244,7 @@
     </section>
     <section class="footer__info">
       <ul>
-        <li><a class="footer__link" href="#">Для поставщиков</a></li>
+        <li class="footer__link-active"><a class="footer__link" href="#">Для поставщиков</a></li>
         <li><a class="footer__link" href="#">О производстве</a></li>
       </ul>
       <ul>
@@ -261,18 +260,27 @@
     </section>
   </div>
   </footer>
-    <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal__content">
+      <button class="modal__content-close" type="button" title="Закрыть">Закрыть</button>
       <form class="login-form" action="http://echo.htmlacademy.ru/" method="post">
-        <h3 class="modal-content-title">Мы обязательно Вам ответим!</h3>
-        <input class="modal__name" type="text" name="username" placeholder="Как Вас зовут?">
-        <input class="modal__email" type="email" name="email" placeholder="Ваша почта для ответа?">
-        <textarea class="modal__comment" name="user-feedback" rows="5" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+        <h3 class="modal__content-title">Мы обязательно Вам ответим!</h3>
+        <div class="modal__sliding">
+          <input class="modal__input" id="username" type="text" name="username">
+          <label class="label" for="username">Как Вас зовут?</label>
+        </div>
+        <div class="modal__sliding">
+          <input class="modal__input" id="email" type="email" name="email">
+          <label class="label" for="email">Ваша почта для ответа?</label>
+        </div>
+        <div class="modal__sliding">
+          <textarea class="modal__input" id="user-feedback" name="user-feedback" rows="5" cols="40"></textarea>
+          <label class="label" for="user-feedback">Напишите что-нибудь...</label>
+      </div>
         <button class="btn btn__modal" type="submit">Отправить</button>
       </form>
     </div>
   </div>
-   <div class="modal-overlay"></div>
+   <div class="modal__overlay"></div>
    <script src="js/script.js"></script>
   </body>
 </html>
