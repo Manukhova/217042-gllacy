@@ -1196,7 +1196,7 @@ figcaption span {
   float: right;
 }
 
-.about {
+/*.about {
   width: 100%;
   min-height: 310px;
   margin-bottom: 46px;
@@ -1215,7 +1215,7 @@ figcaption span {
 
 .about__item {
   width: 44%;
-  min-height: 220px;
+
   font-weight: 400;
 }
 
@@ -1253,6 +1253,53 @@ figcaption span {
 .about__text p {
   margin-top: 14px;
   color: #323232;
+}*/
+
+.about {
+  width: 100%;
+  min-height: 310px;
+  margin-bottom: 46px;
+  padding: 27px 23px;
+  background-image: url(../img/Вафля.jpg);
+  border-radius: 10px;
+  color: #000000;
+  box-sizing: border-box;
+
+}
+
+.about__top,
+.about__bottom {
+  display: flex;
+}
+
+.about__item {
+  display: flex;
+}
+
+.about__icon-1 {
+  margin-bottom: 40px;
+  height: 47px;
+  width: 47px;
+  background-image: url(../img/Мороженко.svg);
+}
+
+.about__icon-2 {
+  margin-bottom: 40px;
+  height: 47px;
+  width: 47px;
+  background-image: url(../img/Корова.svg);
+}
+
+.about__icon-3 {
+  height: 47px;
+  width: 47px;
+  background-image: url(../img/Листик.svg);
+}
+
+.about__icon-4 {
+  height: 47px;
+  width: 47px;
+  background-image: url(../img/Градусник.svg);
 }
 
 .news {
@@ -1724,6 +1771,6 @@ figcaption span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
   }
 }
