@@ -6,7 +6,7 @@
  var slidebtn = document.querySelectorAll(".slide-btn");
  var basketlink = document.querySelector(".basket__link");
  var basketarea = document.querySelector(".basket__area");
-
+ var overlay = document.querySelector(".modal__overlay");
  var input = popup.querySelectorAll(".modal__input");
  var label = popup.querySelectorAll(".label");
 
@@ -14,6 +14,11 @@
         event.preventDefault();
         popup.classList.add("modal-show");
 
+      });
+
+overlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-show");
 
       });
 
