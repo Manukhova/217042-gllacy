@@ -20,7 +20,7 @@
                 <a href="#">Каталог</a>
                   <ul class="menu__sub">
                     <li class="menu__item-sub"><a href="#">Новинки</a></li>
-                    <li class="menu__item-sub"><a href="#">Сливочное</a></li>
+                    <li class="menu__item-sub sub__active"><span>Сливочное</span></li>
                     <li class="menu__item-sub"><a href="#">Щербеты</a></li>
                     <li class="menu__item-sub"><a href="#">Фруктовый лед</a></li>
                     <li class="menu__item-sub"><a href="#">Мелорин</a></li>
@@ -51,7 +51,7 @@
             <div class="enter__form">
               <form action="http://echo.htmlacademy.ru/" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
-                <input type="password" name="password" id="password-field" placeholder="Пароль">
+                <input type="password" name="password" id="password" placeholder="Пароль">
                 <div>
                   <div class="enter__forget">
                 <a href="#">Забыли пароль?</a>
@@ -91,9 +91,14 @@
           </div>
           </div>
           </div>
-       </div>
    </header>
+    </div>
     <main class="wrapper">
+      <div class="menu__contacts">
+        <p>С 10 до 20, ежедневно<br>
+         <b>8 812 450-25-25</b>
+         </p>
+      </div>
       <div class="catalog__title">
         <ul class="breadcrumbs">
           <li>
@@ -166,7 +171,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-              <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <figcaption><span>310 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -178,7 +183,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <figcaption><span>380 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -190,7 +195,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <figcaption><span>355 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -202,7 +207,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
            <figcaption><span>415 ₽</span>/кг</figcaption>
          </div>
           </figure>
@@ -214,7 +219,7 @@
        <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+            <img src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             <figcaption><span>325 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -226,7 +231,7 @@
        <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <img src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             <figcaption><span>410 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -238,7 +243,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <img src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <figcaption><span>375 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -250,7 +255,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <img src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             <figcaption><span>320 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -262,7 +267,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <img src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             <figcaption><span>440 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -274,7 +279,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-          <img src="img/10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+          <img src="img/10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             <figcaption><span>435 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -286,7 +291,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <img src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             <figcaption><span>355 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -298,7 +303,7 @@
         <article class="catalog__item">
           <figure>
             <div class="catalog__div">
-            <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+            <img src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
             <figcaption><span>420 ₽</span>/кг</figcaption>
           </div>
           </figure>
@@ -309,7 +314,7 @@
         </article>
     </div>
     <div class="paginator">
-      <span class="paginator__prev" href="#"></span>
+      <span class="paginator__prev"></span>
       <span class="paginator__present">1</span>
       <a href="#">2</a>
       <a href="#">3</a>
