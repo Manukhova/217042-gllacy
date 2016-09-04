@@ -2,7 +2,6 @@
  var popup = document.querySelector(".modal");
  var content = document.querySelector(".modal__content");
  var close = content.querySelector(".modal__content-close");
-
  var slidebtn = document.querySelectorAll(".slide-btn");
  var basketlink = document.querySelector(".basket__link");
  var basketarea = document.querySelector(".basket__area");
@@ -13,19 +12,16 @@
  link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("modal-show");
-
       });
 
 overlay.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("modal-show");
-
       });
 
  close.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("modal-show");
-
       });
 
  for(var i = 0; i < slidebtn.length; i++){
@@ -42,12 +38,10 @@ overlay.addEventListener("click", function(event) {
        if(this.value.length > 0){
           for(var i = 0; i < input.length; i++) {
              label[i].classList.add("label-data");}
-
-     } else {
-         for(var i = 0; i < input.length; i++) {
-          label[i].classList.remove("label-data");
+          } else {
+            for(var i = 0; i < input.length; i++) {
+               label[i].classList.remove("label-data");
+          }
         }
-     }
-  });
-
+      });
     }
