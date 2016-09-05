@@ -37,18 +37,15 @@ h3 {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
-  content: "";
-  visibility: hidden;
-}
-
-.site-wrapper:before {
-  background-image: url("../img/slide-2.png");
-}
-
-.site-wrapper:after {
-  background-image: url("../img/slide-3.png");
+.site-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper {
@@ -57,8 +54,6 @@ h3 {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper:before,
@@ -1087,6 +1082,14 @@ input[type="checkbox"]:checked + label::after {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-controls label:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .slider {
   position: relative;
   padding-top: 317px;
@@ -1098,7 +1101,6 @@ input[type="checkbox"]:checked + label::after {
 .slider-controls {
   position: absolute;
   bottom: 22px;
-
   z-index: 20;
   font-size: 0;
 }
@@ -1109,18 +1111,27 @@ input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
-#btn-1:checked ~ .site-wrapper {
+#btn-1:checked ~ .site-overlay {
   background-color: #849d8f;
+}
+
+#btn-1:checked ~ .site-wrapper {
   background-image: url("../img/slide-1.png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+#btn-2:checked ~ .site-overlay {
   background-color: #8996a6;
+}
+
+#btn-2:checked ~ .site-wrapper {
   background-image: url("../img/slide-2.png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+#btn-3:checked ~ .site-overlay {
   background-color: #9d8b84;
+}
+
+#btn-3:checked ~ .site-wrapper {
   background-image: url("../img/slide-3.png");
 }
 
@@ -1616,7 +1627,7 @@ figcaption {
 }
 
 .footer {
-  margin-bottom: 29px;
+  padding-bottom: 29px;
 }
 
 .footer__btn {
