@@ -1559,7 +1559,7 @@ figcaption {
 }
 
 .paginator__prev {
-  background: url(../img/prev.svg);
+  background-image: url(../img/prev.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
@@ -1567,7 +1567,7 @@ figcaption {
 }
 
 .paginator__next {
-  background: url(../img/next.svg);
+  background-image: url(../img/next.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
