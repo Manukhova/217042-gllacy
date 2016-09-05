@@ -162,7 +162,6 @@ h3 {
   background-color: rgba(255,255,255,0.2);
 }
 
-
 .menu__item a:hover,
 .menu__item:hover > a {
   background-color: #f7f6f3;
@@ -311,7 +310,7 @@ h3 {
   top: 7px;
   width: 17px;
   height: 17px;
-  background: transparent url("../img/Лупа.svg") no-repeat;
+  background: transparent url("../img/lupa.svg") no-repeat;
 }
 
 .search__area:hover,
@@ -327,7 +326,7 @@ h3 {
   top: 7px;
   width: 17px;
   height: 17px;
-  background: transparent url("../img/Лупачерный.svg") no-repeat;
+  background: transparent url("../img/lupablack.svg") no-repeat;
 }
 
 .search {
@@ -385,7 +384,7 @@ h3 {
   top: 5px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/Вход.svg") no-repeat;
+  background: transparent url("../img/enter.svg") no-repeat;
 }
 
 .enter__area:hover::before,
@@ -396,7 +395,7 @@ h3 {
   top: 5px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/Входчерный.svg") no-repeat;
+  background: transparent url("../img/enterblack.svg") no-repeat;
 }
 
 .enter {
@@ -593,7 +592,7 @@ table td:last-child {
   top: 5px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/Корзина.svg") no-repeat;
+  background: transparent url("../img/basket.svg") no-repeat;
 }
 
 .basket__area:hover::before {
@@ -603,7 +602,7 @@ table td:last-child {
   top: 5px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/Корзиначерный.svg") no-repeat;
+  background: transparent url("../img/basketblack.svg") no-repeat;
 }
 
 .basket__area-goods {
@@ -621,7 +620,7 @@ table td:last-child {
   top: 5px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/Корзинакрасный.png") no-repeat;
+  background: transparent url("../img/basketred.png") no-repeat;
 }
 
 .catalog__title {
@@ -670,7 +669,6 @@ table td:last-child {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
-
 
 .breadcrumbs .current,
 .breadcrumbs .current:hover {
@@ -729,11 +727,11 @@ table td:last-child {
   right: 15px;
   width: 8px;
   height: 5px;
-  background: transparent url(../img/Маркер.svg) no-repeat;
+  background: transparent url(../img/marker.svg) no-repeat;
 }
 
 .sort__back:hover::after {
-  background: transparent url(../img/Маркерчерный.svg) no-repeat;
+  background: transparent url(../img/markerblack.svg) no-repeat;
 }
 
 .sort__back {
@@ -833,7 +831,6 @@ input[type="radio"] + label {
 input[type="radio"] + label:last-child {
   margin-right: 0px;
 }
-
 
 input[type="radio"] + label::before {
   content: "";
@@ -946,7 +943,7 @@ input[type="checkbox"]:disabled + label::after {
   left: 0;
   height: 20px;
   width: 20px;
-  background: url("../img/Чекбокс.png") no-repeat;
+  background: url("../img/vop.png") no-repeat;
   cursor: default;
 }
 
@@ -969,7 +966,7 @@ input[type="checkbox"]:checked + label::after {
   left: 0;
   height: 20px;
   width: 20px;
-  background: transparent url("../img/Галка.png") no-repeat;
+  background: transparent url("../img/v.png") no-repeat;
 }
 
 .top__back {
@@ -1172,7 +1169,6 @@ input[type="checkbox"]:checked + label::after {
           justify-content: space-between;
 }
 
-
 .catalog__item {
   width: 23.2%;
   margin-right: 2.3%;
@@ -1314,7 +1310,7 @@ figcaption {
 .stock__left {
   width: 48.95%;
   min-height: 230px;
-  background: #af1e45 url(../img/Малиновыйфон.png);
+  background: #af1e45 url(../img/rasberry.png);
   background-size: auto 100%;
   border-radius: 10px;
   padding: 0 22px 0 17px;
@@ -1324,7 +1320,7 @@ figcaption {
 .stock__right {
   width: 48.95%;
   min-height: 230px;
-  background: #49250f url(../img/Шоколадныйфон.png);
+  background: #49250f url(../img/choko.png);
   background-size: auto 100%;
   border-radius: 10px;
   padding: 0 22px 0 20px;
@@ -1343,7 +1339,7 @@ figcaption {
   min-height: 307px;
   margin-bottom: 35px;
   padding: 22px 26px 0 20px;
-  background: #eaddc3 url(../img/Вафля.jpg);
+  background: #eaddc3 url(../img/waffle.jpg);
   border-radius: 10px;
   color: #000000;
   box-sizing: border-box;
@@ -1390,28 +1386,28 @@ figcaption {
   margin-right: 8px;
   height: 47px;
   width: 47px;
-  background-image: url(../img/Мороженко.svg);
+  background-image: url(../img/ice.svg);
 }
 
 .about__icon-2 {
   margin-right: 8px;
   height: 47px;
   width: 47px;
-  background-image: url(../img/Корова.svg);
+  background-image: url(../img/cow.svg);
 }
 
 .about__icon-3 {
   margin-right: 8px;
   height: 47px;
   width: 47px;
-  background-image: url(../img/Листик.svg);
+  background-image: url(../img/leef.svg);
 }
 
 .about__icon-4 {
   margin-right: 8px;
   height: 47px;
   width: 47px;
-  background-image: url(../img/Градусник.svg);
+  background-image: url(../img/termo.svg);
 }
 
 .news {
@@ -1427,7 +1423,7 @@ figcaption {
 .blog {
   width: 48.86%;
   height: 222px;
-  background: #ffffff url(../img/Клубничныйфон.png);
+  background: #ffffff url(../img/berry.png);
   background-size: auto 100%;
   background-position: center;
   border-radius: 10px;
@@ -1462,7 +1458,7 @@ figcaption {
   width: 48.86%;
   height: 222px;
   border-radius: 10px;
-  background: #f8f7f4 url(../img/Почтовыйфон.jpg);
+  background: #f8f7f4 url(../img/Mail.jpg);
   background-size: auto 100%;
   color: #000000;
   font-weight: 400;
@@ -1510,7 +1506,7 @@ figcaption {
 .location {
   position: relative;
   min-height: 430px;
-  background-image: url(../img/Картапин.jpg);
+  background-image: url(../img/Map.jpg);
 }
 
 .location__contacts {
@@ -1636,25 +1632,25 @@ figcaption {
 }
 
 .footer__btn-tw {
-  background: url("../img/Твитер.svg") no-repeat center;
+  background: url("../img/twiter.svg") no-repeat center;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .footer__btn-inst {
-  background: url("../img/Инста.svg") no-repeat center;
+  background: url("../img/inst.svg") no-repeat center;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .footer__btn-fb {
-  background: url("../img/ФБ.svg") no-repeat center;
+  background: url("../img/fb.svg") no-repeat center;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .footer__btn-vk {
-  background: url("../img/ВК.svg") no-repeat center;
+  background: url("../img/vk.svg") no-repeat center;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
@@ -1690,7 +1686,7 @@ figcaption {
   height: 13px;
   top: 2px;
   left: -20px;
-  background: url(../img/Сердце.svg) no-repeat center;
+  background: url(../img/heart.svg) no-repeat center;
 }
 
 .footer__social {
@@ -1960,7 +1956,7 @@ figcaption {
     min-height: 373px;
     margin-bottom: 40px;
     padding: 24px 26px 0 20px;
-    background-image: url(../img/Вафля.jpg);
+    background-image: url(../img/waffle.jpg);
     border-radius: 10px;
     color: #000000;
     box-sizing: border-box;
@@ -2115,7 +2111,7 @@ figcaption {
   .blog {
     width: 49.3%;
     height: 222px;
-    background-image: url(../img/Клубничныйфон.png);
+    background-image: url(../img/rasberry.png);
     background-size: auto 100%;
     background-position: center;
     border-radius: 10px;
