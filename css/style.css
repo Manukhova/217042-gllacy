@@ -291,7 +291,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 .search__area {
@@ -662,10 +662,19 @@ table td:last-child {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.breadcrumbs .current {
-  text-decoration: none;
+.breadcrumbs a:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+
+.breadcrumbs .current,
+.breadcrumbs .current:hover {
+  border-bottom: none;
 }
 
 .filter__form {
@@ -815,11 +824,16 @@ input[type="radio"] + label {
   line-height: 18px;
   font-size: 16px;
   font-weight: 500;
-  padding-left: 27px;
+  padding-left: 32px;
   position: relative;
   cursor: pointer;
   margin-right: 15px;
 }
+
+input[type="radio"] + label:last-child {
+  margin-right: 0px;
+}
+
 
 input[type="radio"] + label::before {
   content: "";
@@ -875,7 +889,7 @@ input[type="radio"] + label:hover::before {
 input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 3.5px;
+  top: 4px;
   left: 4px;
   width: 12px;
   height: 12px;
@@ -886,7 +900,7 @@ input[type="radio"]:checked + label::after {
 .fat__back {
   background-color: rgba(255,255,255,0.2);
   border-radius: 40px;
-  padding: 8px 15px;
+  padding: 6px 15px;
 }
 
 input[type="checkbox"] + label {
@@ -1183,9 +1197,9 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: -7px;
+  bottom: -133px;
   left: -13px;
   right: -13px;
-  bottom: -133px;
   background-color: #ffffff;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
@@ -1436,8 +1450,7 @@ figcaption {
   }
 
 .blog__link {
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.8);
+  color: #323232;
 }
 
 .blog__link:hover,
@@ -1594,6 +1607,10 @@ figcaption {
   color: #000000;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.footer {
+  margin-bottom: 29px;
 }
 
 .footer__btn {
