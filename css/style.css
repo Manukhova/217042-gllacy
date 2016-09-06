@@ -1168,7 +1168,6 @@ input[type="checkbox"]:checked + label::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 92px;
 }
 
 .main-calatog {
@@ -1276,19 +1275,12 @@ figcaption {
   border-radius: 50%;
 }
 
-.catalog__hit {
-  position: relative;
-  text-align: center;
-  width: 23.2%;
-}
-
 .catalog__img-hit {
   position: absolute;
   border-radius: 50%;
 }
 
-.catalog__link,
-.inside__link {
+.catalog__link {
   color: #ffffff;
   font-weight: 500;
   text-align: center;
@@ -1298,12 +1290,6 @@ figcaption {
 
 .catalog__link:hover,
 .catalog__link:active {
-  color: #ffbc9e;
-  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
-}
-
-.inside__link:hover,
-.inside__link:active {
   color: #ffffff;
   border-bottom: none;
 }
