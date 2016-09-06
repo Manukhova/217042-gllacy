@@ -650,7 +650,8 @@ table td:last-child {
   display: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.breadcrumbs span {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
