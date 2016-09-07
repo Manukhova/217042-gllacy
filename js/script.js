@@ -1,6 +1,6 @@
  var link = document.querySelector(".btn__feedback");
  var popup = document.querySelector(".modal");
- var content = document.querySelector(".modal__content");
+ var content = popup.querySelector(".modal__content");
  var close = content.querySelector(".modal__content-close");
  var slidebtn = document.querySelectorAll(".slide-btn");
  var basketlink = document.querySelector(".basket__link");
@@ -12,6 +12,7 @@
  link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("modal-show");
+        content.classList.add("modal__content-show");
       });
 
 overlay.addEventListener("click", function(event) {
@@ -22,6 +23,7 @@ overlay.addEventListener("click", function(event) {
  close.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("modal-show");
+        content.classList.remove("modal__content-show");
       });
 
  for(var i = 0; i < slidebtn.length; i++){
